@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Caesar</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="header">Caesar Cipher</div>
+<button class="clear" onclick="goHome()">⬅ Back</button>
+
+<div class="container">
+
+<div class="left">
+<input type="text" id="text" placeholder="Text">
+<input type="number" id="key" placeholder="Key">
+
+<button class="encrypt" onclick="encrypt()">Encrypt</button>
+<button class="decrypt" onclick="decrypt()">Decrypt</button>
+</div>
+
+<div class="right">
+<div class="output" id="result"></div>
+</div>
+
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../js/caesar.js"></script>
+
+</body>
+</html>

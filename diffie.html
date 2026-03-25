@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diffie-Hellman</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="header">Diffie-Hellman Key Exchange</div>
+<button class="clear" onclick="goHome()">⬅ Back</button>
+
+<div class="container">
+
+<!-- LEFT -->
+<div class="left">
+    <h3>Input</h3>
+
+    <input type="number" id="q" placeholder="Prime Number (q)">
+    <input type="number" id="a" placeholder="Primitive Root (α)">
+    <input type="number" id="xa" placeholder="Private Key A (XA)">
+    <input type="number" id="xb" placeholder="Private Key B (XB)">
+
+    <button class="encrypt" onclick="generate()">Generate Keys</button>
+    <button class="clear" onclick="clearAll()">Clear</button>
+</div>
+
+<!-- RIGHT -->
+<div class="right">
+    <h3>Output</h3>
+    <div class="output" id="output"></div>
+</div>
+
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../js/diffie.js"></script>
+
+</body>
+</html>

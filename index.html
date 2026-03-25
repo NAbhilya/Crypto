@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Toolkit</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>🔐 Crypto UI</h2>
+    <ul>
+        <li onclick="openPage('pages/caesar.html')">Caesar Cipher</li>
+        <li onclick="openPage('pages/railfence.html')">Rail Fence</li>
+        <li onclick="openPage('pages/diffie.html')">Diffie-Hellman</li>
+    </ul>
+</div>
+
+<div class="main">
+
+    <h1>Dashboard</h1>
+    <p>Select an algorithm to begin</p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🔐 Caesar Cipher</h3>
+            <p><b>What:</b> Shift-based substitution cipher</p>
+            <p><b>Use:</b> Basic text encryption</p>
+
+            <ul>
+                <li>Enter text</li>
+                <li>Enter key</li>
+                <li>Click Encrypt/Decrypt</li>
+            </ul>
+
+            <button onclick="openPage('pages/caesar.html')">Open</button>
+        </div>
+
+        <div class="card">
+            <h3>🚆 Rail Fence Cipher</h3>
+            <p><b>What:</b> Zig-zag transposition cipher</p>
+            <p><b>Use:</b> Rearranges text pattern</p>
+
+            <ul>
+                <li>Enter text</li>
+                <li>Enter rails</li>
+                <li>Click Encrypt/Decrypt</li>
+            </ul>
+
+            <button onclick="openPage('pages/railfence.html')">Open</button>
+        </div>
+
+        <div class="card">
+            <h3>🔑 Diffie-Hellman</h3>
+            <p><b>What:</b> Key exchange algorithm</p>
+            <p><b>Use:</b> Secure shared key generation</p>
+
+            <ul>
+                <li>Enter q, α</li>
+                <li>Enter private keys</li>
+                <li>Click Generate</li>
+            </ul>
+
+            <button onclick="openPage('pages/diffie.html')">Open</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

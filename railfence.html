@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rail Fence</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="header">Rail Fence Cipher</div>
+<button class="clear" onclick="goHome()">⬅ Back</button>
+
+<div class="container">
+
+<div class="left">
+<input type="text" id="text" placeholder="Text">
+<input type="number" id="key" placeholder="Rails">
+
+<button class="encrypt" onclick="encrypt()">Encrypt</button>
+<button class="decrypt" onclick="decrypt()">Decrypt</button>
+</div>
+
+<div class="right">
+<div id="table"></div>
+<div class="output" id="result"></div>
+</div>
+
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../js/railfence.js"></script>
+
+</body>
+</html>
